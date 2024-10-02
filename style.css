@@ -6,7 +6,6 @@ html, body {
   color: white;
   background-color: #000;
   height: 100%;
-  overflow: visible;
 }
 
 /* Container for content and canvas */
@@ -117,10 +116,6 @@ footer {
   .container {
     flex-direction: column;
     align-items: center;
-  }
-
-  canvas {
-    width: 80%;
   }
 
   #button-container {
