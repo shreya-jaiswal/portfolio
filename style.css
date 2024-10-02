@@ -6,6 +6,7 @@ html, body {
   color: white;
   background-color: #000;
   height: 100%;
+  overflow: visible;
 }
 
 /* Container for content and canvas */
