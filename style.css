@@ -13,14 +13,14 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 20px;
+  padding: 0px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .content {
   flex: 1;
-  padding: 20px;
+  padding: 0px;
 }
 
 #canvas-container {
