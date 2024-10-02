@@ -30,11 +30,17 @@ function setup() {
 function windowResized() {
   resizeCanvas(windowWidth / 2, windowHeight / 2);
 }
-window.addEventListener('resize', () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-});
 
+function resizeCanvas() {
+    let canvas = document.getElementById('canvas');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Optional: add scaling logic if needed
+}
+
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas(); // Call on page load
 function draw() {
   background(0);
   
