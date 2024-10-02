@@ -118,6 +118,11 @@ footer {
     align-items: center;
   }
 
+  canvas {
+  width: 100%;
+  height: auto;
+}
+
   #button-container {
     flex-direction: column;
     gap: 20px;
