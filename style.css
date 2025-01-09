@@ -122,7 +122,7 @@ figcaption li {
         }
     }
 header {
-    max-width: 70%;
+    max-width: 80%;
     align-items: left;
     margin: auto;
     padding: 0rem;
@@ -251,24 +251,58 @@ h6 {
 .work {
     padding: 0rem 0; /* Add some spacing around the section */
     width: 100%;
+    gap: 1rem;
 }
 
 .projects {
-    background: #EDEDED;
+    background: #F7F7F7;
     padding: 4rem;
     font-family: var(--mono);
     border-radius: 3rem;
     max-width: 100%; /* Match the max-width of .container */
-    margin: 0; /* Center the .projects section */
+    margin: 10px; /* Center the .projects section */
     display: flex;
     flex-wrap: wrap; /* Allow wrapping for elements */
     justify-content: space-between;
     align-items: flex-start; /* Align items to the top */
 }
 
+.svg {
+    width: 50px;
+}
+/* Column Wrapper */
+.why-columns {
+    font-family: var(--mono);
+    display: grid; /* Use grid for the columns */
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    gap: 2rem; /* Add spacing between columns */
+    width: 100%; /* Ensure it takes the full width of the container */
+    margin: 0 0 50 0;
+}
+
+/* Individual Column Styling */
+.column {
+    background-color: #F7F7F7; /* Optional: Background for columns */
+    padding: 2rem; /* Inner spacing */
+    border-radius: 3rem; /* Rounded corners */
+    text-align: left; /* Align text to the left */
+}
+
+.column h3 {
+    font-size: 1.5rem; /* Heading size */
+    font-family: var(--mono);
+    margin-bottom: 1rem;
+}
+
+.column p {
+    font-size: 1rem; /* Paragraph size */
+    line-height: 1.6; /* Line spacing for readability */
+}
+
+
 /* Container styling */
 .container {
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
     padding: 0 1rem;
     display: flex;
@@ -280,6 +314,7 @@ h6 {
     flex: 1; /* Allow the left column to take up available space */
     display: flex;
     flex-direction: column; /* Stack text and stats vertically */
+    margin: 0 60px  0 0px;
 }
 
 /* Text content */
@@ -290,6 +325,7 @@ h6 {
 /* Image content */
 .image-container {
     max-width: 500px; /* Set the maximum width for the container */
+    gap: 20px;
     flex-shrink: 0; /* Prevent the container from shrinking */
 }
 
@@ -308,6 +344,7 @@ h6 {
     gap: 0rem; /* Add space between columns and rows */
     width: 100%; /* Ensure stats take up the full width of the parent */
     margin-top: 0rem; /* Add some spacing above the stats */
+    margin: 0 60px  0 0px;
 }
 
 /* Individual stat */
@@ -323,6 +360,15 @@ h6 {
     font-size: var(--h5);
 }
 
+.ask-me {
+    display: inline-block; /* Shrink the div to fit the content */
+    border-radius: 2rem; /* Rounded corners */
+    border: 2px solid var(--white); /* Border with color and style */
+    padding: 0.5rem 1rem; /* Space between border and text */
+    text-align: left; /* Align text inside */
+    width: auto; /* Ensure the width adjusts to the content */
+    margin: 0 60px  0 0px;
+}
 
 
 .intro {
