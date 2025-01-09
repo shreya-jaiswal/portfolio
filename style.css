@@ -1,7 +1,7 @@
 
 :root {
-    --black: #EDF0F6;
-    --white: #6995E6;
+    --black: #FFFFFF;
+    --white: #000000;
     --green: #31b328;
     --lightgreen: #8cdfc5;
     --magenta: #F05E41;
@@ -18,8 +18,6 @@
     --h4: calc(var(--h5) * var(--scale));
     --h5: calc(var(--h6) * var(--scale));
     --h6: var(--base-size);
-
-s
 }
 
 .colors {
@@ -39,12 +37,6 @@ s
 footer {
     text-align: center;
     padding: 6rem;
-}
-
-.projects {
-    background-color: var(--black);
-    padding: 0;
-    color: var(--white);
 }
 
 figure {
@@ -130,7 +122,7 @@ figcaption li {
         }
     }
 header {
-    max-width: 1000px;
+    max-width: 70%;
     align-items: left;
     margin: auto;
     padding: 0rem;
@@ -239,20 +231,99 @@ h6 {
     font-family: var(--mono);
 }
 
+/* Bouncing image animation */
+.bouncing-image {
+    display: block;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* Keyframes for bounce effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the same position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up 20px */
+    }
+}
+
+/* Section work styling */
+.work {
+    padding: 0rem 0; /* Add some spacing around the section */
+    width: 100%;
+}
+
+.projects {
+    background: #EDEDED;
+    padding: 4rem;
+    font-family: var(--mono);
+    border-radius: 3rem;
+    max-width: 100%; /* Match the max-width of .container */
+    margin: 0; /* Center the .projects section */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for elements */
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Container styling */
 .container {
-    max-width: 1000px;
+    max-width: 70%;
     margin: 0 auto;
     padding: 0 1rem;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
 }
 
-.leftbox {
-    width: 50%;
+/* Left column containing text and stats */
+.left-column {
+    flex: 1; /* Allow the left column to take up available space */
+    display: flex;
+    flex-direction: column; /* Stack text and stats vertically */
 }
 
-.rightbox {
-    width: 50%;
+/* Text content */
+.text-content {
+    text-align: left; /* Align text to the left */
 }
+
+/* Image content */
+.image-container {
+    max-width: 500px; /* Set the maximum width for the container */
+    flex-shrink: 0; /* Prevent the container from shrinking */
+}
+
+/* Image inside the container */
+.image-container img {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    height: auto;    /* Maintain the image's aspect ratio */
+    object-fit: contain; /* Optional: Ensures the image fits within the container */
+    border-radius: 0.5rem; /* Optional: Add rounded corners to the image */
+}
+
+/* Stats container */
+.statistics {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 0rem; /* Add space between columns and rows */
+    width: 100%; /* Ensure stats take up the full width of the parent */
+    margin-top: 0rem; /* Add some spacing above the stats */
+}
+
+/* Individual stat */
+.stat {
+    padding: 0rem;       /* Inner spacing */
+    border-radius: 0rem; /* Rounded corners */
+    width: 60%;
+    text-align: left;  /* Align text inside each stat */
+}
+
+.stat-font {
+    font-weight: 500;  /* Set desired weight */
+    font-size: var(--h5);
+}
+
+
 
 .intro {
 
