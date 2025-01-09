@@ -270,6 +270,35 @@ h6 {
 .svg {
     width: 50px;
 }
+
+.social-svg {
+    width: 20px;
+}
+
+
+.social-links {
+    display: flex; /* Enable Flexbox */
+    justify-content: left; /* Center items horizontally */
+    align-items: left; /* Center items vertically */
+    gap: 1rem; /* Add space between the icons */
+}
+
+.social-links a {
+    display: inline-block; /* Ensure links behave like inline elements */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-links img {
+    width: 40px; /* Set the icon size */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
 /* Column Wrapper */
 .why-columns {
     font-family: var(--mono);
