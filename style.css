@@ -150,6 +150,55 @@
     color: #0ACC6C; /* Change color on hover */
 }
 
+/* Hamburger Menu Styling */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stack bars */
+    cursor: pointer;
+    gap: 0.4rem;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333; /* Color of hamburger bars */
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger:hover div {
+    background-color: #0ACC6C; /* Change color on hover */
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .navbar {
+        max-width: 90%; /* Adjust navbar width */
+    }
+
+    .navbar-right {
+        display: none; /* Hide the links initially */
+        flex-direction: column; /* Stack links when visible */
+        position: fixed; /* Overlay menu */
+        top: 60px; /* Position below navbar */
+        right: 0; /* Align to right edge */
+        background-color: #ffffff; /* Background for dropdown */
+        padding: 1rem;
+        gap: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        z-index: 1001; /* Ensure it overlays content */
+        border-radius: 0.5rem;
+    }
+
+    .navbar-right.show {
+        display: flex; /* Show links when toggled */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger menu */
+    }
+}
+
 
 
 .svg {
@@ -395,9 +444,9 @@ h6 {
 
 .projects {
     background: #E2E2E5;
-    padding: 4rem;
+    padding: 1.5rem;
     font-family: var(--mono);
-    border-radius: 3rem;
+    border-radius: .3rem;
     max-width: 100%; /* Match the max-width of .container */
     margin: 10px; /* Center the .projects section */
     display: flex;
@@ -428,38 +477,6 @@ h6 {
 .social-links img:hover {
     color: green;
 }
-
-
-/* Column Wrapper */
-.why-columns {
-    font-family: var(--mono);
-    display: grid; /* Use grid for the columns */
-    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
-    gap: 2rem; /* Add spacing between columns */
-    width: 100%; /* Ensure it takes the full width of the container */
-    margin: 0 0 50 0;
-}
-
-/* Individual Column Styling */
-.column {
-    background-color: #F7F7F7; /* Optional: Background for columns */
-    padding: 2rem; /* Inner spacing */
-    border-radius: 3rem; /* Rounded corners */
-    text-align: left; /* Align text to the left */
-}
-
-.column h3 {
-    font-size: 1.5rem; /* Heading size */
-    font-family: var(--mono);
-    margin-bottom: 1rem;
-}
-
-.column p {
-    font-size: 1rem; /* Paragraph size */
-    line-height: 1.6; /* Line spacing for readability */
-}
-
-
 /* Container styling */
 .container {
     max-width: 70%;

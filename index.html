@@ -12,10 +12,16 @@
     <div class="navbar-left">
         <h1>Shreya Jaiswal</h1><p class="subtext"><font size=5 color="#0ACC6C">Lead Mixed Methods UX Researcher</font></p>
     </div>
+     <!-- Hamburger Menu -->
+     <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     <div class="navbar-right">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Resume</a>
+        <a href="resume.pdf">Resume</a>
         <div class="social-links">
             <a href="https://github.com/shreya-jaiswal">
                 <img src="github.svg">
@@ -23,12 +29,21 @@
             <a href="https://www.linkedin.com/in/jaiswal-shreya/">
                 <img src="linkedin.svg">
             </a>
-            <a href="https://uxdesign.cc/ux-writing-tools-for-handling-information-overload-3fbad7939f26?gi=2e88fc2da3ed">
-                <img src="medium.svg">
+            <a href="https://thedecisionlab.com/insights/consumer-insights/how-behavioral-science-can-make-airports-less-miserable">
+                <img src="writing.svg">
             </a>
         </div>
     </div>
 </nav>
+
+<script>
+
+    function toggleMenu() {
+        const navbarRight = document.querySelector('.navbar-right');
+        navbarRight.classList.toggle('show'); // Toggles the 'show' class
+    }
+</script>
+
 <head>
     <title>Shreya</title>
     <link rel="icon" type="image/png" href="favicon.png"> <!-- Path to your favicon -->
@@ -39,6 +54,7 @@
     <div class="container">
     <span><h1 style="display: inline">I combine qual and quant insights to <i><font color="#0ACC6C">win hearts</i></font> and <i><font color="#0ACC6C">change minds</i></font> — one data story at a time. </h1>
         <p style="font-family: var(--mono);"><font size=5>On the lookout for hybrid/remote roles with heartwarming missions! 📍Brooklyn <br></font></p></span><br>
+        PS: This website is not responsive yet, I am coding it as we speak.
 
         <center><br><br><img src="https://static.thenounproject.com/png/496855-200.png" width=50px class="bouncing-image"></center>
     </div>
@@ -46,10 +62,10 @@
 
 
 <section class="about-section">
-    <div class="about-container">
+    <div class="about-container" id="about">
         <!-- Left Column: About Text -->
         <div class="about-text">
-            <p>📊 I'm Shreya, a Lead Mixed Methods UX Researcher and non-fiction storyteller.</p>
+            <p>📊 I'm Shreya, a Lead Mixed Methods UX Researcher and <a href="https://thedecisionlab.com/insights/consumer-insights/how-behavioral-science-can-make-airports-less-miserable">non-fiction storyteller.</a></p>
             <p>🐒 In a past life, I studied primate behavior (technically still do) at <a href="https://primate.uchicago.edu/index.html">UChicago</a> & <a href="https://cnprc.ucdavis.edu/">UC Davis</a>. Ten wet labs later, the scentific method is in my DNA.</p>
             <p>🎨 I've mastered my craft at <a href="https://www.chase.com/">Chase</a>, <a href="https://www.onepeloton.com/">Peloton</a>, and <a href="https://unity.com/">Unity</a> over 5  years.</p>
             <p>✍🏽 I'm learning to tell climate data stories at the <a href="https://nycdatascience.com/">NYC Data Science Academy.</p></a>
@@ -62,36 +78,12 @@
     </div>
 </section>
 
-<section class="why-hire-me">
-    <div class="container">
-        <h2><center>Why you should hire me</h2><br></center>
-        <div class="why-columns">
-            <div class="column">
-                <img src="data.svg" class="svg">
-                <h3>Data Science Enabled</h3>
-                <p>I strongly believe robust data analysis is the future of UX Research, that's why I have a background in it.</p>
-            </div>
-            <div class="column">
-                <img src="degree.svg" class="svg">
-                <h3>Behavioral Science Masters</h3>
-                <p>I went to UChicago and worked with primates and in wet labs, I have the scientific method in my DNA.</p>
-            </div>
-            <div class="column">
-                <img src="team.svg" class="svg">
-                <h3>Team & Community Builder</h3>
-                <p>My most valuable asset is my ability to bring people together, even difficult people.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 
 
 <section class="work">
     
     <div class="container">
-        <h2><center>What I'm working on</h2><br></center>
-        <div class="projects">
+        <div class="projects" id="projects">
             <div class="left-column">
                 <div class="text-content">
                     <font style="font-family: var(--mono)" size=6 color="#0ACC6C">Benchmarks & Measurable Impacts</font><br><br>
