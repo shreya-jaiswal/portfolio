@@ -22,7 +22,7 @@
 
 /* About Section */
 .about-section {
-    padding: 4rem 1rem; /* Spacing around the section */
+    padding: 0rem 1rem; /* Spacing around the section */
 }
 
 /* About Container */
@@ -62,6 +62,54 @@
     object-fit: cover; /* Ensure the image scales nicely */
     height: 530px;
 }
+
+/* Image Section */
+.image-section {
+    padding: 40px;
+    gap: 1rem; /* Spacing around the section */
+    font-family: var(--mono);
+    font-size: 1.5rem;
+    max-width: 70%; /* Limit overall section width */
+    margin: 0 auto;
+}
+
+/* Image Container */
+.image-container2 {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 1rem; /* Space between columns */
+    margin: 0 auto; /* Center the container */
+    align-items: start; /* Align items at the top */
+    padding: 1 1rem;
+}
+
+/* Image Column */
+.image-column {
+    text-align: center; /* Center-align captions */
+    display: flex;
+    flex-direction: column; /* Stack image and caption */
+    align-items: center; /* Center items in the column */
+}
+
+/* Image Styling */
+.image-column img {
+    width: 100%; /* Fill the container */
+    max-width: 100%; /* Prevent overflow */
+    height: auto;
+    border-radius: 0.3rem; /* Rounded corners */
+    object-fit: cover; /* Ensure the image scales nicely */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+/* Caption Styling */
+.caption {
+    margin-top: 0.5rem; /* Space between image and caption */
+    font-family: var(--mono); /* Use your preferred font */
+    font-size: 1rem; /* Adjust caption size */
+    color: #414357; /* Caption text color */
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -368,6 +416,12 @@ body, html {
     background-image: radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
     background-size: 15px 15px;
 
+}
+
+.highlight {
+    background-color: #0ACC6C; /* Highlight color (yellow) */
+    padding: 0.2rem; /* Optional: Add spacing inside the highlight */
+    font-family: var(--mono);
 }
 
 a {
