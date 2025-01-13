@@ -1,8 +1,8 @@
 
 :root {
-    --black: #F9F9F9;
-    --white: #000000;
-    --green: #31b328;
+    --black: #FFFFFF;
+    --white: #236130;
+    --green: #9ABC06;
     --lightgreen: #8cdfc5;
     --magenta: #F05E41;
     --main: "Hedvig Letters Serif", serif;
@@ -22,7 +22,7 @@
 
 /* About Section */
 .about-section {
-    padding: 0rem 1rem; /* Spacing around the section */
+    padding: 0rem 0rem; /* Spacing around the section */
 }
 
 /* About Container */
@@ -37,13 +37,12 @@
 
 /* Left Column: About Text */
 .about-text {
-    background-color: #E2E2E5; /* White background for contrast */
+    background-color: #F9F4F2; /* White background for contrast */
     padding: 1rem; /* Add spacing inside the box */
     height: 500px;
     border-radius: .3rem; /* Rounded corners */
     font-family: var(--mono); /* Optional: Your preferred font */
     font-size: 1.5rem; /* Adjust text size */
-    font-color: #414357;
     line-height: 1.6; /* Improve readability */
     color: #333; /* Text color */
 }
@@ -80,7 +79,7 @@
     gap: 1rem; /* Space between columns */
     margin: 0 auto; /* Center the container */
     align-items: start; /* Align items at the top */
-    padding: 1 1rem;
+    padding: 0 0rem;
 }
 
 /* Image Column */
@@ -152,38 +151,31 @@
     margin: 0 auto;
     justify-content: space-between; /* Space between left and right sections */
     align-items: center; /* Align items vertically */
-    padding: 1rem 2rem; /* Padding for spacing */
+    padding: 1rem 1rem; /* Padding for spacing */
     top: 0; /* Stick to the top of the viewport */
     z-index: 1000; /* Ensure it stays on top */
 }
-
 /* Left Section Styling */
 .navbar-left {
+    position: fixed;
     display: flex; /* Use Flexbox for layout */
     flex-direction: column; /* Stack elements vertically */
     align-items: flex-start; /* Align content to the left */
-}
-
-.navbar-left h1 {
-    margin: 0; /* Remove default margin */
 }
 
 .navbar-left .subtext {
     font-family: var(--mono); /* Use your preferred font */
     font-weight: 400;
     color: #0ACC6C; /* Green color for the subtext */
-    margin: 0; /* Remove default margin */
 }
 
 .navbar-right {
     position: fixed;
     font-family: var(--mono);
-    top: 20px; /* Stick to the top of the viewport */
     right: 15%; /* Align it to the right side of the navbar */
     z-index: 1000; /* Keep it above other content */
     display: flex; /* Align links horizontally */
     gap: 1rem; /* Add spacing between links */
-    padding: 1rem;
 }
 
 
@@ -419,7 +411,7 @@ body, html {
 }
 
 .highlight {
-    background-color: #0ACC6C; /* Highlight color (yellow) */
+    background-color: #DE3890; /* Highlight color (yellow) */
     padding: 0.2rem; /* Optional: Add spacing inside the highlight */
     font-family: var(--mono);
 }
@@ -497,12 +489,11 @@ h6 {
 }
 
 .projects {
-    background: #E2E2E5;
-    padding: 1.5rem;
+    background: #F9F4F2;
     font-family: var(--mono);
     border-radius: .3rem;
     max-width: 100%; /* Match the max-width of .container */
-    margin: 10px; /* Center the .projects section */
+    margin: 0px; /* Center the .projects section */
     display: flex;
     flex-wrap: wrap; /* Allow wrapping for elements */
     justify-content: space-between;
@@ -545,12 +536,13 @@ h6 {
     flex: 1; /* Allow the left column to take up available space */
     display: flex;
     flex-direction: column; /* Stack text and stats vertically */
-    margin: 0 60px  0 0px;
+    margin: 0 0px  0 0px;
 }
 
 /* Text content */
 .text-content {
     text-align: left; /* Align text to the left */
+    padding: 1rem 1rem 0 1rem; /* Top, Right, Bottom, Left */
 }
 
 /* Image content */
@@ -575,7 +567,7 @@ h6 {
     gap: 0rem; /* Add space between columns and rows */
     width: 100%; /* Ensure stats take up the full width of the parent */
     margin-top: 0rem; /* Add some spacing above the stats */
-    margin: 0 60px  0 0px;
+    padding: 1rem 1rem 0 1rem; /* Top, Right, Bottom, Left */
 }
 
 /* Individual stat */
@@ -590,17 +582,6 @@ h6 {
     font-weight: 500;  /* Set desired weight */
     font-size: var(--h5);
 }
-
-.ask-me {
-    display: inline-block; /* Shrink the div to fit the content */
-    border-radius: 2rem; /* Rounded corners */
-    border: 2px solid var(--white); /* Border with color and style */
-    padding: 0.5rem 1rem; /* Space between border and text */
-    text-align: left; /* Align text inside */
-    width: auto; /* Ensure the width adjusts to the content */
-    margin: 0 60px  0 0px;
-}
-
 
 .intro {
 
@@ -637,7 +618,6 @@ header {
 }
 
 .container {
-    padding: 3rem;
     margin: 0;
     max-width: 90%;
 }
