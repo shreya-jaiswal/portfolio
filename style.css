@@ -53,12 +53,6 @@
 /* About Section */
 .about-section {
     padding: 0rem 0rem; /* Spacing around the section */
-}
-
-/* About Container */
-.about-container {
-    display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
     gap: 1rem; /* Space between columns */
     width: 70%;
     max-width: 1000px; /* Limit the container width */
@@ -70,7 +64,7 @@
 .about-text {
     background-color: #F9F4F2; /* White background for contrast */
     padding: 1rem; /* Add spacing inside the box */
-    height: 500px;
+    height: auto;
     border-radius: .3rem; /* Rounded corners */
     font-family: var(--mono); /* Optional: Your preferred font */
     font-size: 1.5rem; /* Adjust text size */
@@ -199,7 +193,7 @@
 .navbar-left .subtext {
     font-family: var(--mono); /* Use your preferred font */
     font-weight: 400;
-    color: #0ACC6C; /* Green color for the subtext */
+    color: #C532C6; /* Green color for the subtext */
 }
 
 .navbar-right {
@@ -319,7 +313,7 @@ figure img {
 }
 
 figure a:hover {
-    color: var(--magenta)
+    color: #C532C6;
 }
 
 figcaption {
@@ -450,7 +444,7 @@ body, html {
 }
 
 a {
-    color: #0ACC6C;
+    color: #C532C6;
 }
 
 a.hover {
@@ -552,7 +546,7 @@ h6 {
 }
 
 .social-links img:hover {
-    color: green;
+    color: #C532C6;
 }
 /* Container styling */
 .container {
