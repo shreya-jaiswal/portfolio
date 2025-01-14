@@ -507,26 +507,6 @@ h6 {
     }
 }
 
-/* Section work styling */
-.work {
-    padding: 0rem 0; /* Add some spacing around the section */
-    width: 100%;
-    gap: 1rem;
-}
-
-.projects {
-    background: #F9F4F2;
-    font-family: var(--mono);
-    border-radius: .3rem;
-    max-width: 100%; /* Match the max-width of .container */
-    margin: 0px; /* Center the .projects section */
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping for elements */
-    justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
-}
-
-
 .social-links {
     display: flex; /* Enable Flexbox */
     justify-content: left; /* Center items horizontally */
@@ -558,13 +538,6 @@ h6 {
     flex-direction: column;
 }
 
-/* Left column containing text and stats */
-.left-column {
-    flex: 1; /* Allow the left column to take up available space */
-    display: flex;
-    flex-direction: column; /* Stack text and stats vertically */
-    margin: 0 0px  0 0px;
-}
 
 /* Text content */
 .text-content {
@@ -585,29 +558,6 @@ h6 {
     height: auto;    /* Maintain the image's aspect ratio */
     object-fit: contain; /* Optional: Ensures the image fits within the container */
     border-radius: 0.5rem; /* Optional: Add rounded corners to the image */
-}
-
-/* Stats container */
-.statistics {
-    display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 0rem; /* Add space between columns and rows */
-    width: 100%; /* Ensure stats take up the full width of the parent */
-    margin-top: 0rem; /* Add some spacing above the stats */
-    padding: 1rem 1rem 0 1rem; /* Top, Right, Bottom, Left */
-}
-
-/* Individual stat */
-.stat {
-    padding: 0rem;       /* Inner spacing */
-    border-radius: 0rem; /* Rounded corners */
-    width: 60%;
-    text-align: left;  /* Align text inside each stat */
-}
-
-.stat-font {
-    font-weight: 500;  /* Set desired weight */
-    font-size: var(--h5);
 }
 
 
