@@ -28,6 +28,7 @@
     align-items: center; /* Center items vertically within their cells */
     height: 100vh; /* Full viewport height */
     margin: 0 auto;
+    padding: 0;
     text-align: left;
 
 }
@@ -62,8 +63,8 @@
 
 /* Left Column: About Text */
 .about-text {
-    background-color: #EDE6D8; /* White background for contrast */
-    padding: 1rem; /* Add spacing inside the box */
+    background-color: #E3E3E5; /* White background for contrast */
+    padding: 3rem; /* Add spacing inside the box */
     height: auto;
     border-radius: .3rem; /* Rounded corners */
     font-family: var(--mono); /* Optional: Your preferred font */
@@ -175,7 +176,7 @@
     display: flex; /* Flexbox for layout */
     width: 70%;
     max-width: 1000px; /* Limit the container width */
-    margin: 0 auto;
+    margin: 10px auto;
     justify-content: space-between; /* Space between left and right sections */
     align-items: center; /* Align items vertically */
     padding: 1rem 1rem; /* Padding for spacing */
