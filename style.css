@@ -62,7 +62,7 @@
 
 /* Left Column: About Text */
 .about-text {
-    background-color: #F9F4F2; /* White background for contrast */
+    background-color: #EDE6D8; /* White background for contrast */
     padding: 1rem; /* Add spacing inside the box */
     height: auto;
     border-radius: .3rem; /* Rounded corners */
@@ -214,7 +214,7 @@
 }
 
 .navbar-right a:hover {
-    color: #0ACC6C; /* Change color on hover */
+    color: #C532C6; /* Change color on hover */
 }
 
 /* Hamburger Menu Styling */
