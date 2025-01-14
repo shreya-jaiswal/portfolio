@@ -104,7 +104,7 @@
     display: grid; /* Use CSS Grid for layout */
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     gap: 1rem; /* Space between columns */
-    margin: 0 auto; /* Center the container */
+    margin: 13px auto; /* Center the container */
     align-items: start; /* Align items at the top */
     padding: 0 0rem;
 }
