@@ -73,6 +73,10 @@
     color: #333; /* Text color */
 }
 
+.about-text img{
+    max-width: 900px;
+}
+
 /* Right Column: About Image */
 .about-image {
     border-radius: .3rem; /* Rounded corners */
