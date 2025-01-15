@@ -4,7 +4,7 @@
     --white: #000000;
     --green: #9ABC06;
     --lightgreen: #8cdfc5;
-    --magenta: #F05E41;
+    --magenta: #C532C6;
     --main: "Hedvig Letters Serif", serif;
     --heading: "Hedvig Letters", serif;
     --mono: "DM Sans", monospace;
@@ -162,7 +162,7 @@
 .navbar-left .subtext {
     font-family: var(--mono); /* Use your preferred font */
     font-weight: 400;
-    color: #C532C6; /* Green color for the subtext */
+    color: var(--magenta); /* Green color for the subtext */
 }
 
 .navbar-right {
@@ -183,7 +183,7 @@
 }
 
 .navbar-right a:hover {
-    color: #C532C6; /* Change color on hover */
+    color: var(--magenta); /* Change color on hover */
 }
 
 /* Hamburger Menu Styling */
@@ -233,7 +233,7 @@ footer {
 }
 
 footer a {
-    color: #C532C6;
+    color: var(--magenta);
 }
 
 figure {
@@ -255,7 +255,7 @@ figure img {
 }
 
 figure a:hover {
-    color: #C532C6;
+    color: var(--magenta);
 }
 
 figcaption {
@@ -354,7 +354,7 @@ body, html {
 }
 
 a {
-    color: #C532C6;
+    color: var(--magenta);
 }
 
 a.hover {
@@ -420,7 +420,7 @@ h6 {
 }
 
 .social-links img:hover {
-    color: #C532C6;
+    color: var(--magenta);
 }
 /* Container styling */
 .container {
