@@ -149,11 +149,25 @@ p {
     line-height: 110%;
 }
 
+p a{
+    color: var(--black);
+    font-family: var(--mono);
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px; 
+}
+
 .note {
     font-family: var(--mono);
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.caption a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 2px; 
 }
 
 
