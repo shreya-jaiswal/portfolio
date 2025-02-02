@@ -241,6 +241,7 @@ p a{
 
 .caption a {
     color: inherit;
+    font-size: inherit;
     text-decoration: underline;
     text-decoration-thickness: 2px; 
 }
