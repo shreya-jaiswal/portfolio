@@ -142,6 +142,80 @@ h4 {
     width: 100%; /* Make sure it spans the full column width */
 }
 
+h6 {
+    font-family: var(--reg);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h5 {
+    font-family: "Inria Serif";
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.5; /* Ensures no extra space is added */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Ensures no extra padding */
+    display: block; /* Keeps it structured correctly */
+}
+
+
+.boxholder {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.box {
+    flex: 1;
+    background-color: #E893F5;
+    text-align: left;
+    padding: 20px;
+}
+
+.box1 {
+    flex: 1;
+    background-color: #88C642;
+    text-align: left;
+    padding: 20px;
+}
+
+.box2 {
+    flex: 1;
+    background-color: #D2C0B6;
+    text-align: left;
+    padding: 20px;
+}
+
+.box3 {
+    flex: 1;
+    background-color: #EAD04E;
+    text-align: left;
+    padding: 20px;
+}
+.rectangle {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 100px;
+    text-align: left;
+    background-color: #CCCCCC;
+    padding: 20px;
+
+}
+
+.rectangle1 {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 100px;
+    text-align: left;
+    background-color: #93C6F5;
+    padding: 20px;
+
+}
+
+.box, .box1, .box2, .box3, .rectangle, .rectangle1 {
+    box-sizing: border-box;
+}
+
 p {
     font-family: var(--reg);
     font-size: 1.5rem;
@@ -162,6 +236,7 @@ p a{
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 700;
+    line-height: 100%;
 }
 
 .caption a {
