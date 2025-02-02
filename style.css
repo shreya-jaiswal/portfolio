@@ -178,8 +178,39 @@ p {
 
 .image-right img {
     max-width: 100%;
-
 }
+
+
+/* Footer Section */
+.footer {
+    background: var(--magenta); /* Dark background */
+    color var(--black); /* White text */
+    padding: 1.5rem 10%; /* Adjust spacing */
+}
+
+/* Grid Layout */
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    align-items: center; /* Vertically align content */
+}
+
+/* Left Column: Align Text Left */
+.footer-left {
+    text-align: left;
+}
+
+/* Right Column: Align Text Right */
+.footer-right {
+    text-align: right;
+}
+
+.footer a{
+    color: var(--black);
+}
+
+
+
 
 /* Navbar Styling */
 .navbar {
@@ -200,8 +231,8 @@ p {
 }
 
 .navbar-left .subtext {
-    font-family: var(--heading); /* Use your preferred font */
-    font-weight: 300;
+    font-family: var(--reg); /* Use your preferred font */
+    font-weight: 400;
 }
 
 .navbar-right {
@@ -250,15 +281,6 @@ p {
     width: 40px;
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-}
-
-footer a {
-    color: var(--magenta);
-}
-
 header {
     max-width: 80%;
     align-items: left;
@@ -299,3 +321,85 @@ nav {
 .social-links img:hover {
     color: var(--magenta);
 }
+
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌍 General Responsive Adjustments */
+@media (max-width: 1024px) {
+    .section {
+        padding: 50px 5%; /* Reduce padding for medium screens */
+    }
+    
+    .two-column {
+        width: 90%;
+        gap: 1.5rem; /* Reduce spacing */
+    }
+
+    .footer-container {
+        padding: 1rem;
+    }
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+    .two-column {
+        flex-direction: column; /* Stack content */
+        gap: 0;
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sectionleft, .sectionright, .left, .right {
+        width: 100%;
+        padding: 1rem 0; /* Adds spacing between stacked content */
+    }
+
+    /* Images in Image Sections */
+    .image-container {
+        grid-template-columns: 1fr; /* Stack images */
+        text-align: center; /* Center content */
+    }
+
+    .image-left, .image-right {
+        margin-bottom: 1rem;
+    }
+
+    /* Footer - Stack and Center */
+    .footer-container {
+        grid-template-columns: 1fr; /* Single column */
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+/* 📱 Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+    .section {
+        padding: 40px 5%;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: smaller;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .footer-left p, .footer-right span {
+        font-size: 14px;
+    }
+}
+
