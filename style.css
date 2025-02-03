@@ -506,11 +506,20 @@ html, body {
         padding: 40px 5%;
     }
 
-    h1, h2, h3, {
+    banner {
+        height: 100vh;
+        background-color: #000;
+        margin: 0 auto;
+    }
+
+    h1, h2, h3 {
         font-size: smaller;
     }
 
-    h4: font-size: 4rem;
+    h4 {
+        font-size: 4rem;
+        line-height: 100%;
+    }
 
     .button {
         font-size: 14px;
