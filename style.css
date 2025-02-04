@@ -107,6 +107,17 @@ h4 {
     padding: 60px 10% 60px 10%;
 }
 
+.section1 {
+    border-top: 1px solid var(--black);
+    padding: 60px 5% 60px 10%;
+    background-color: #f0f0f0;
+}
+
+.sectionright1 {
+    flex: 1;
+    padding: 0px 0 0 0;
+}
+
 .two-column {
     display: flex;
     align-items: flex-start; /* Align items at the top */
@@ -121,6 +132,20 @@ h4 {
     font-family: var(--reg) !important;
     padding: 10px;
     text-decoration: none;
+}
+
+.button1{
+    background-color: var(--black);
+    color: var(--white) !important;
+    font-family: var(--reg) !important;
+    font-size: 3rem;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    text-decoration: none;
+    display: flex;
+    justify-content: left; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
 }
 
 
@@ -518,12 +543,12 @@ html, body {
 
     h1 {
         font-size: 6rem;
-        line-height: 100%;
+        line-height: 110%;
     }
 
-    h4 {
+    .sectionleft h4 {
         font-size: 5rem;
-        line-height: 100%;
+        line-height: 110%;
     }
 
     .button {
