@@ -133,20 +133,6 @@ h4 {
     text-decoration: underline;
 }
 
-.button1{
-    background-color: var(--black);
-    color: var(--white) !important;
-    font-family: var(--reg) !important;
-    font-size: 3rem;
-    padding: 10px;
-    width: 100%;
-    height: 100px;
-    text-decoration: none;
-    display: flex;
-    justify-content: left; /* Centers text horizontally */
-    align-items: center; /* Centers text vertically */
-}
-
 
 .sectionleft {
     flex: .5;
