@@ -287,6 +287,11 @@ p a{
 
 }
 
+video {
+    max-width: 80%;  /* Set desired square size */
+    object-fit: cover; /* Ensures the video fills the square */
+  }
+
 .image-right img {
     max-width: 100%;
 }
