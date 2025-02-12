@@ -237,13 +237,13 @@ p {
     font-family: var(--reg);
     font-size: 1.5rem;
     font-weight: 300;
-    line-height: 110%;
+    line-height: 120%;
 }
 
 p a{
     color: var(--black);
     font-family: var(--mono);
-    font-size: 20px;
+    font-size: inherit;
     text-decoration: underline;
     text-decoration-thickness: 2px; 
 }
@@ -266,7 +266,7 @@ p a{
 
 /* Image Section Styling */
 .image-section {
-    background: #B9D9EB; /* Light grey background */
+    background: #F9EFE6; /* Light grey background */
     border-top: 1px solid var(--black); /* Dark border at the top */
     padding: 60px 0 60px 0; /* Adds spacing inside */
     margin: 0 auto;
