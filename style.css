@@ -1,7 +1,7 @@
 
 :root {
-    --black: #2A2929;
-    --white: #FFF;
+    --black: #9E2B2F;
+    --white: #F2D4D7;
     --green: #13402F;
     --magenta: #C532C6;
     --tangerine: #FF5B27;
@@ -107,10 +107,16 @@ h4 {
     padding: 60px 10% 60px 10%;
 }
 
+.sectionheader {
+    border-top: 1px solid var(--black);
+    padding: 60px 10% 60px 10%;
+    background: #B8D8FE;
+}
+
 .section1 {
     border-top: 1px solid var(--black);
     padding: 60px 5% 60px 10%;
-    background-color: #f0f0f0;
+    background-color: #B9D9EB;
 }
 
 .sectionright1 {
@@ -128,7 +134,7 @@ h4 {
 
 .button{
     font-size: 1.5rem !important;
-    color: red !important;
+    color: #FC4D18 !important;
     font-family: var(--reg) !important;
     text-decoration: underline;
 }
@@ -178,28 +184,28 @@ h5 {
 
 .box {
     flex: 1;
-    background-color: #E893F5;
+    background-color: #F9EFE6;
     text-align: left;
     padding: 20px;
 }
 
 .box1 {
     flex: 1;
-    background-color: #88C642;
+    background-color: #B8D8FE;
     text-align: left;
     padding: 20px;
 }
 
 .box2 {
     flex: 1;
-    background-color: #D2C0B6;
+    background-color: #FC4D18;
     text-align: left;
     padding: 20px;
 }
 
 .box3 {
     flex: 1;
-    background-color: #EAD04E;
+    background-color: #F9EFE6;
     text-align: left;
     padding: 20px;
 }
@@ -208,7 +214,7 @@ h5 {
     margin-top: 10px;
     margin-right: 100px;
     text-align: left;
-    background-color: #CCCCCC;
+    background-color: #FC4D18;
     padding: 20px;
 
 }
@@ -260,7 +266,7 @@ p a{
 
 /* Image Section Styling */
 .image-section {
-    background: #f0f0f0; /* Light grey background */
+    background: #B9D9EB; /* Light grey background */
     border-top: 1px solid var(--black); /* Dark border at the top */
     padding: 60px 0 60px 0; /* Adds spacing inside */
     margin: 0 auto;
@@ -288,8 +294,8 @@ p a{
 
 /* Footer Section */
 .footer {
-    background: var(--magenta); /* Dark background */
-    color var(--black); /* White text */
+    background: var(--black); /* Dark background */
+    color: var(--white); /* White text */
     padding: 1.5rem 10%; /* Adjust spacing */
 }
 
@@ -311,7 +317,7 @@ p a{
 }
 
 .footer a{
-    color: var(--black);
+    color: var(--white);
 }
 
 
