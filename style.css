@@ -287,6 +287,13 @@ p a{
 
 }
 
+ul {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--mono);
+    color: var(--black);
+}
+
 video {
     max-width: 80%;  /* Set desired square size */
     object-fit: cover; /* Ensures the video fills the square */
