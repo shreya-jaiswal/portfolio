@@ -74,8 +74,18 @@ h2 {
     margin-top: 0.5rem; /* Space between image and caption */
     font-family: var(--mono); /* Use your preferred font */
     text-transform: uppercase;
-    font-size: .8rem; /* Adjust caption size */
-    color: #737c7a; /* Caption text color */
+    font-size: 1rem; /* Adjust caption size */
+    color: #212121; /* Caption text color */
+}
+
+/* Skills Styling */
+.skills {
+    margin-top: 0.5rem; /* Space between image and caption */
+    margin-left: 5%;
+    font-family: var(--mono); /* Use your preferred font */
+    text-transform: uppercase;
+    font-size: 1rem; /* Adjust caption size */
+    color: #212121; /* Caption text color */
 }
 
 .intro {
@@ -105,6 +115,7 @@ h4 {
 .section {
     border-top: 1px solid var(--black);
     padding: 60px 10% 60px 10%;
+    background-color: #F9EFE6;
 }
 
 .sectionheader {
@@ -116,7 +127,6 @@ h4 {
 .section1 {
     border-top: 1px solid var(--black);
     padding: 60px 5% 60px 10%;
-    background-color: #B9D9EB;
 }
 
 .sectionright1 {
@@ -184,7 +194,7 @@ h5 {
 
 .box {
     flex: 1;
-    background-color: #F9EFE6;
+    background-color: var(--white);
     text-align: left;
     padding: 20px;
 }
@@ -205,7 +215,7 @@ h5 {
 
 .box3 {
     flex: 1;
-    background-color: #F9EFE6;
+    background-color: var(--white);
     text-align: left;
     padding: 20px;
 }
@@ -242,7 +252,7 @@ p {
 
 p a{
     color: var(--black);
-    font-family: var(--mono);
+    font-family: var(--reg);
     font-size: inherit;
     text-decoration: underline;
     text-decoration-thickness: 2px; 
