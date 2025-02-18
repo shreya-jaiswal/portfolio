@@ -220,7 +220,7 @@ h5 {
 .box2 {
     flex: 1;
     background-color: var(--red);
-    color: var(white);
+    color: var(--white);
     text-align: left;
     padding: 20px;
 }
