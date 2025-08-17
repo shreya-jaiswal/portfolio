@@ -1,12 +1,13 @@
 
 :root {
-    --black: #252525;
+    --black: #292929;
     --white: #FFFFFF;
-    --red: #E61429;
-    --pale: #F6F6F6;
-    --heading: "Inria Serif", serif;
+    --red: #FD5353;
+    --pale: #F0F0F0;
+    --heading: "Lora";
     --mono: "DM Mono", monospace;
-    --reg: "DM Sans", sans-serif;
+    --nav: "DM Sans", sans-serif;
+    --reg: "Lora";
     --italic: "Hedvig Letters", serif;
     --base-size: 1rem;
     --scale: 1.3;
@@ -27,18 +28,80 @@ body, html {
     margin: 0px;
     padding: 0px;
     background-color: var(--white);
-    background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.07) 1.5px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.07) 1.5px, transparent 1px);
-    background-size: 40px 40px; /* size of each grid cell */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.04) 1.5px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1.5px, transparent 1px);
+    background-size: 40px 40px;
     background-size: 40px 40px;
 
 }
+
+.sj-info-box {
+    display: flex;
+    gap: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding: 2rem;
+    font-family: var(--nav);
+    font-size: .9rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06),
+    0 2px 4px rgba(0,0,0,0.04);
+  }
+  
+  .sj-column {
+    flex: 1;
+    font-family: var(--nav);
+    font-size: .9rem;
+  }
+  
+  .sj-heading {
+    display: inline-block;   /* shrink box to text width */
+    font-weight: 500;
+    font-family: var(--nav);
+    font-size: .9rem;
+    border-top: 2px solid var(--red); /* your color */
+    padding-top: 0.25rem;       /* space between border + text */
+    margin-bottom: 1rem;
+  }
+  
+
+.profile-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between circle + text */
+  }
+  
+  .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--red); /* your color */
+    color: white;
+    font-family: var(--nav);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text .line1 {
+    font-family: var(--nav);
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .text .line2 {
+    font-family: var(--nav);
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+  }
+  
 
 .flourish-container {
     background: var(--white); /* Light gray background */
     padding: 40px;
     width: 100%;
+    border-radius: 15px;
 }
 
 .highlight-red {
@@ -46,27 +109,43 @@ body, html {
 }
 
 h1 {
-    font-family: "Inria Serif";
+    font-family: var(--heading);
     font-weight: 400;
     font-size: 4rem;
     letter-spacing: -2px;
+    margin-top: 10px;   /* kill the default top margin */
     line-height: 110%;
+    margin-bottom: 30px;
+}
+
+.overline {
+    border-bottom: 2px solid var(--red); /* your color */
 }
 
 h3 {
     font-family: var(--reg);
     font-weight: 250;
-    font-size: 2rem; 
+    font-size: 1.5rem; 
     line-height: 140%;
+    margin-top: 10px;
 }
 
 h2 {
-    font-family: "Inria Serif";
-    font-weight: 700;
+    font-family: var(--reg);
+    font-weight: 500;
     font-size: 2rem;
     line-height: 110%;
-    letter-spacing: -2px;
 }
+
+.pill {
+    font-family: var(--nav);
+    font-size: .8rem;
+    font-weight: 400;
+    border-radius: 15px;
+    border: 1px solid var(--black); /* shorthand */
+    padding: 0.25em 0.75em;         /* space inside the pill */
+    display: inline-block;          /* so border-radius works properly */
+  }
 
 /* Image Container */
 .image-container3 {
@@ -74,26 +153,23 @@ h2 {
 }
 
 .image-container3 img {
-    max-width: 100%; /* Ensure the image scales appropriately */
+    max-width: 400px; /* Ensure the image scales appropriately */
     height: auto;
     border-radius: 0.5rem;
     object-fit: fill;
-    border: 1px solid var(--black);
 }
 
 /* Caption Styling */
 .caption {
-    margin-top: 0.5rem; /* Space between image and caption */
-    font-family: var(--mono); /* Use your preferred font */
-    text-transform: uppercase;
-    font-size: 1rem; /* Adjust caption size */
+    margin-top: 5px; /* Space between image and caption */
+    font-family: var(--nav); /* Use your preferred font */
+    font-size: .9rem; /* Adjust caption size */
     color: #212121; /* Caption text color */
 }
 
 /* Skills Styling */
 .skills {
     margin-top: 0.5rem; /* Space between image and caption */
-    margin-left: 5%;
     font-family: var(--mono); /* Use your preferred font */
     text-transform: uppercase;
     font-size: 1rem; /* Adjust caption size */
@@ -104,7 +180,7 @@ h2 {
     display: grid;
     max-width: 80%;
     grid-template-columns: 2fr 1fr; /* Define two columns: 1/3 and 2/3 */
-    column-gap: 1rem; /* Add spacing between the columns */
+    column-gap: .5rem; /* Add spacing between the columns */
     justify-items: center; /* Center items horizontally within their cells */
     align-items: center; /* Center items vertically within their cells */
     height: 100vh; /* Full viewport height */
@@ -118,7 +194,7 @@ h2 {
 }
 
 h4 {
-    font-weight: 600;
+    font-weight: 450;
     font-family: var(--reg);
     letter-spacing: -2px;
     line-height: 125%;
@@ -132,7 +208,7 @@ h4 {
 .sectionheader {
     border-top: 1px solid var(--red);
     padding: 60px 10% 60px 10%;
-    background: var(--pale);
+    background: var(--white);
 }
 
 .section1 {
@@ -153,6 +229,7 @@ h4 {
     margin: 0 auto;
     gap: 2rem;
     padding: 0 100px 0 0;
+    max-width: 1500px;
 }
 
 .button{
@@ -215,7 +292,7 @@ h5 {
 
 .box1 {
     flex: 1;
-    background-color: #EEE9DD;
+    background-color: var(--pale);
     text-align: left;
     padding: 20px;
 }
@@ -251,7 +328,7 @@ h5 {
     margin-top: 10px;
     margin-right: 100px;
     text-align: left;
-    background-color: #EEE9DD;
+    background-color: var(--pale);
     padding: 20px;
 
 }
@@ -308,6 +385,7 @@ p a:hover{
     padding: 60px 0 60px 0; /* Adds spacing inside */
     margin: 0 auto;
     width: 100%;
+    max-width: 1500px;
 }
 
 /* Image Container with Grid Layout */
@@ -315,12 +393,15 @@ p a:hover{
     display: grid;
     grid-template-columns: 2fr 1fr; /* Left takes 2x space, Right takes 1x */
     margin: 0 auto;
-    width: 70%;
+    width: 85%;
+    max-width: 1500px;
     gap: .5rem;
+    padding: 0 24px;     
 }
 
 .image-left img {
     max-width: 80%;
+    border-radius: 15px;
 
 }
 
@@ -338,6 +419,12 @@ video {
 
 .image-right img {
     max-width: 100%;
+    border-radius: 15px;
+}
+
+.rounded-video {
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 
@@ -375,6 +462,7 @@ video {
 /* Navbar Styling */
 .navbar {
     display: flex; /* Flexbox for layout */
+    background-color: var(--white);
     width: 90%;
     margin: 20px auto;
     justify-content: space-between; /* Space between left and right sections */
@@ -384,6 +472,8 @@ video {
 }
 /* Left Section Styling */
 .navbar-left {
+    font-family: var(--nav);
+    font-weight: 400;
     position: fixed;
     display: flex; /* Use Flexbox for layout */
     flex-direction: column; /* Stack elements vertically */
@@ -391,14 +481,14 @@ video {
 }
 
 .navbar-left .subtext {
-    font-family: var(--reg); /* Use your preferred font */
+    font-family: var(--nav); /* Use your preferred font */
     font-weight: 400;
 }
 
 .navbar-right {
     position: fixed;
-    font-family: var(--reg);
-    font-weight: 300;
+    font-family: var(--nav);
+    font-weight: 400;
     right: 5%;
     z-index: 1000; /* Keep it above other content */
     display: flex; /* Align links horizontally */
@@ -455,7 +545,7 @@ header a:hover svg {
 }
 
 nav {
-    font-family: var(--heading);
+    font-family: var(--nav);
     font-weight: 600;
 }
 
@@ -538,6 +628,7 @@ html, body {
 
     h2 {
         font-size: 2rem;
+        font-family: var(--reg)
     }
 
     h3 {
@@ -572,6 +663,7 @@ html, body {
     .image-container {
         grid-template-columns: 1fr; /* Stack images */
         text-align: center; /* Center content */
+        padding: 0 16px; 
     }
 
     /* Footer - Stack and Center */
@@ -587,7 +679,7 @@ html, body {
 
     .intro {
         grid-template-columns: 1fr;   /* stack */
-        max-width: 92%;
+        max-width: 1500px;
         height: auto;                 /* avoid 100vh issues on mobile */
         padding: 24px 0;
         row-gap: 1.25rem;
@@ -625,4 +717,5 @@ html, body {
     width: 100% !important;
     min-width: 0 !important;
     max-width: 100% !important;
+    border-radius: 15px;
   }
