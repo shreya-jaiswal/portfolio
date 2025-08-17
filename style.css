@@ -353,13 +353,6 @@ p a{
     
 }
 
-body p a::after {
-    content: "\2197";       /* Unicode ↗ */
-    font-size: inherit;
-    color: inherit;
-    margin-left: 0;
-  }
-
 p a:hover{
     color: var(--red);
 }
@@ -556,7 +549,9 @@ nav {
     align-items: left; /* Center items vertically */
     gap: 1rem; /* Add space between the icons */
 }
-
+img {
+    border-radius: 15px;
+}
 .social-links a {
     display: inline-block; /* Ensure links behave like inline elements */
     text-decoration: none; /* Remove underline from links */
