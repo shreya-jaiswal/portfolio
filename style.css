@@ -564,5 +564,42 @@ html, body {
     .footer-left p, .footer-right span {
         font-size: 14px;
     }
+
+
+    /* Grid that stacks on mobile */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+  @media (max-width: 900px) {
+    .two-column { grid-template-columns: 1fr; }
+  }
+  
+  /* Let columns actually shrink on small screens */
+  .sectionleft, .sectionright, .sectionright1, .flourish-container {
+    min-width: 0;
+  }
+  
+  /* Make the Flourish block responsive */
+  .flourish-embed {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;  /* or use height: 50vh; */
+    min-height: 360px;
+    position: relative;
+  }
+  .flourish-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+  }
+  
+  /* Safety: avoid clipping the iframe horizontally */
+  .flourish-container { overflow: visible; }
+  
 }
 
