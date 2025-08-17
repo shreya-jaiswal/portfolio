@@ -637,6 +637,7 @@ html, body {
         font-family: var(--nav);
     }
 
+
     .left, .right, .sectionheader, .image-section, .section, .section1 {
         width: 100%;
         padding: 0;
