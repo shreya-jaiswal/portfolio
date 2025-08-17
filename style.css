@@ -266,7 +266,7 @@ h6 {
 }
 
 h5 {
-    font-family: "Inria Serif";
+    font-family: var(--reg);
     font-size: 60px;
     font-weight: 600;
     line-height: 1.5; /* Ensures no extra space is added */
@@ -280,11 +280,13 @@ h5 {
     display: flex;
     gap: 10px;
     width: 100%;
+    font-family: var(--nav);
 }
 
 .box {
     flex: 1;
     background-color: var(--black);
+    font-family: var(--nav);
     text-align: left;
     color: var(--white);
     padding: 20px;
@@ -294,6 +296,7 @@ h5 {
     flex: 1;
     background-color: var(--pale);
     text-align: left;
+    font-family: var(--nav);
     padding: 20px;
 }
 
@@ -302,6 +305,7 @@ h5 {
     background-color: var(--red);
     color: var(--white);
     text-align: left;
+    font-family: var(--nav);
     padding: 20px;
 }
 
@@ -310,6 +314,7 @@ h5 {
     background-color: var(--black);
     color: var(--white);
     text-align: left;
+    font-family: var(--nav);
     padding: 20px;
 }
 .rectangle {
@@ -320,6 +325,7 @@ h5 {
     background-color: var(--red);
     color: var(--white);
     padding: 20px;
+    font-family: var(--nav);
 
 }
 
@@ -330,6 +336,7 @@ h5 {
     text-align: left;
     background-color: var(--pale);
     padding: 20px;
+    font-family: var(--nav);
 
 }
 
@@ -357,15 +364,9 @@ p a:hover{
     color: var(--red);
 }
 
-.note {
-    font-family: var(--mono);
-    font-size: 1rem;
-    text-transform: uppercase;
-    line-height: 100%;
-}
-
 .caption a {
     color: inherit;
+    font-family: var(--nav);
     font-size: inherit;
     text-decoration: underline;
     text-decoration-thickness: 2px; 
@@ -631,6 +632,7 @@ html, body {
     }
     .caption {
         font-size: .8rem;
+        font-family: var(--nav);
     }
 
     .left, .right, .sectionheader, .image-section, .section, .section1 {
