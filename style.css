@@ -482,12 +482,21 @@ html, body {
     box-sizing: border-box;
 }
 
+/* 4) Let flex/grid children actually shrink */
 .sectionleft,
 .sectionright,
 .sectionright1,
-.flourish-container {
-  min-width: 0;   /* critical for flex children */
+.flourish-container,
+.left,
+.image-container3 {
+  min-width: 0;  /* you already added this—keep it */
 }
+
+.flourish-container {
+    padding: clamp(12px, 4vw, 24px);  /* was 40px */
+    width: 100%;
+    max-width: 100%;
+  }
 
 
 /* 🌍 General Responsive Adjustments */
@@ -511,8 +520,8 @@ html, body {
         flex-direction: column; /* Stack content */
         gap: 0;
         padding: 0;
-        width: 95%;
-        margin: 0;
+        width: 100%;
+        margin: 0 auto;
         grid-template-columns: 1fr;
     }
     h1 {
@@ -583,24 +592,29 @@ html, body {
   min-width: 0;
 }
 
-/* Make the Flourish block responsive */
+}
+
+/* 5) Flourish: fill its box without overflow */
 .flourish-embed {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 10;  /* or use height: 50vh; */
-  min-height: 360px;
-  position: relative;
-}
-.flourish-embed iframe {
-  position: absolute;
-  inset: 0;
-  width: 100% !important;
-  height: 100% !important;
-  display: block;
-}
-
-/* Safety: avoid clipping the iframe horizontally */
-.flourish-container { overflow: visible; }
-
-}
-
+    display: block;
+    width: 100%;
+    position: relative;
+    aspect-ratio: 16 / 10;  /* good default; change if you want taller */
+    min-height: 320px;      /* can be smaller on phones */
+  }
+  .flourish-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6) Datawrapper: ensure it doesn’t collapse to zero width */
+  iframe[src*="datawrapper.dwcdn.net"] {
+    display: block;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
