@@ -498,7 +498,6 @@ html, body {
     
     .two-column {
         width: 90%;
-        gap: 1.5rem; /* Reduce spacing */
     }
 
     .footer-container {
@@ -512,8 +511,8 @@ html, body {
         flex-direction: column; /* Stack content */
         gap: 0;
         padding: 0;
-        width: 90%;
-        margin: 0 auto;
+        width: 95%;
+        margin: 0;
         grid-template-columns: 1fr;
     }
     h1 {
@@ -531,19 +530,31 @@ html, body {
         font-size: .8rem;
     }
 
-    .sectionleft, .sectionright, .left, .right {
+    .left, .right, .sectionheader, .image-section, .section, .section1 {
         width: 100%;
-        padding: 1rem 0; /* Adds spacing between stacked content */
+        padding: 0;
+    }
+    .sectionleft, .image-container {
+        padding: 0 5% 0% 5%;
+    }
+
+    .sectionright {
+        padding: 0 5% 10% 5%;
+
+    }
+    .sectionright1 {
+        padding: 10% 5% 10% 5%;
+    }
+
+    .sectionheader {
+        width: 100%;
+        padding: 0%; /* Adds spacing between stacked content */
     }
 
     /* Images in Image Sections */
     .image-container {
         grid-template-columns: 1fr; /* Stack images */
         text-align: center; /* Center content */
-    }
-
-    .image-left, .image-right {
-        margin-bottom: 1rem;
     }
 
     /* Footer - Stack and Center */
@@ -591,21 +602,5 @@ html, body {
 /* Safety: avoid clipping the iframe horizontally */
 .flourish-container { overflow: visible; }
 
-}
-
-/* 📱 Extra Small Devices (Phones) */
-@media (max-width: 480px) {
-    .section {
-        padding: 40px 5%;
-    }
-
-    .button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    .footer-left p, .footer-right span {
-        font-size: 14px;
-    }
 }
 
