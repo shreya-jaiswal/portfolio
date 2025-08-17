@@ -276,7 +276,7 @@ p a{
     
 }
 
-body button p a::after {
+body p a::after {
     content: "\2197";       /* Unicode ↗ */
     font-size: inherit;
     color: inherit;
