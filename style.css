@@ -197,7 +197,7 @@ h4 {
     font-weight: 450;
     font-family: var(--reg);
     letter-spacing: -2px;
-    line-height: 125%;
+    line-height: 110%;
     font-size: 2.5rem;
 }
 .section {
@@ -593,23 +593,14 @@ html, body {
   }
 
 
-/* 🌍 General Responsive Adjustments */
-@media (max-width: 1024px) {
-    .section {
-        padding: 50px 5%; /* Reduce padding for medium screens */
-    }
-    
-    .two-column {
-        width: 90%;
-    }
-
-    .footer-container {
-        padding: 1rem;
-    }
-}
 
 /* 📱 Mobile Responsiveness */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+        .sj-info-box {
+          flex-direction: column;
+          gap: 1rem; /* smaller gap on mobile */
+          padding: 5%;
+        }
     .two-column {
         flex-direction: column; /* Stack content */
         gap: 0;
@@ -630,6 +621,17 @@ html, body {
     h3 {
         font-size: 1.5rem;
     }
+
+    h4 {
+        padding: 0;
+        font-size: 2rem;
+        margin: auto 0 2% 0;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
     .caption {
         font-size: .8rem;
         font-family: var(--nav);
@@ -639,8 +641,8 @@ html, body {
         width: 100%;
         padding: 0;
     }
-    .sectionleft, .image-container {
-        padding: 0 5% 0% 5%;
+    .sectionleft, .image-container, .image-left {
+        padding: 8% 5% 0% 5%;
     }
 
     .sectionright {
@@ -678,7 +680,7 @@ html, body {
         grid-template-columns: 1fr;   /* stack */
         max-width: 1500px;
         height: auto;                 /* avoid 100vh issues on mobile */
-        padding: 24px 0;
+        padding: 7% 2.5% 2.5% 2.5%;
         row-gap: 1.25rem;
       }
       .left { padding-right: 0; }
