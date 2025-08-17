@@ -273,7 +273,15 @@ p a{
     font-size: inherit;
     text-decoration: underline;
     text-decoration-thickness: 2px; 
+    
 }
+
+body button p a::after {
+    content: "\2197";       /* Unicode ↗ */
+    font-size: inherit;
+    color: inherit;
+    margin-left: 0;
+  }
 
 p a:hover{
     color: var(--red);
