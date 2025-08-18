@@ -34,6 +34,10 @@ body, html {
 
 }
 
+*, *::before, *::after { box-sizing: border-box; }
+
+
+
 .sj-info-box {
     display: flex;
     gap: 2rem;
@@ -178,7 +182,8 @@ h2 {
 
 .intro {
     display: grid;
-    max-width: 80%;
+    width: 80%;
+    max-width: 1500px;
     grid-template-columns: 2fr 1fr; /* Define two columns: 1/3 and 2/3 */
     column-gap: .5rem; /* Add spacing between the columns */
     justify-items: center; /* Center items horizontally within their cells */
@@ -207,15 +212,17 @@ h4 {
 
 .sectionheader {
     border-top: 1px solid var(--red);
-    padding: 60px 10% 60px 10%;
+    padding: 60px 0 60px 0;
     background: var(--white);
+    margin: auto;
 }
 
 .section1 {
     border-top: 1px solid var(--red);
-    padding: 60px 5% 60px 10%;
+    padding: 60px 0 60px 0;
     background: var(--black);
     color: var(--white);
+    margin: auto;
 }
 
 .sectionright1 {
@@ -226,9 +233,10 @@ h4 {
 .two-column {
     display: flex;
     align-items: flex-start; /* Align items at the top */
-    margin: 0 auto;
+    margin: auto;
     gap: 2rem;
-    padding: 0 100px 0 0;
+    padding: 0 0 0 0;
+    width: 80%;
     max-width: 1500px;
 }
 
@@ -379,7 +387,6 @@ p a:hover{
     padding: 60px 0 60px 0; /* Adds spacing inside */
     margin: 0 auto;
     width: 100%;
-    max-width: 1500px;
 }
 
 /* Image Container with Grid Layout */
