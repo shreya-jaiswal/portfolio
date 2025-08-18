@@ -128,10 +128,6 @@ h1 {
     margin-bottom: 30px;
 }
 
-.overline {
-    border-bottom: 2px solid var(--red); /* your color */
-}
-
 h3 {
     font-family: var(--reg);
     font-weight: 250;
@@ -174,15 +170,6 @@ h2 {
     margin-top: 5px; /* Space between image and caption */
     font-family: var(--nav); /* Use your preferred font */
     font-size: .9rem; /* Adjust caption size */
-    color: #212121; /* Caption text color */
-}
-
-/* Skills Styling */
-.skills {
-    margin-top: 0.5rem; /* Space between image and caption */
-    font-family: var(--mono); /* Use your preferred font */
-    text-transform: uppercase;
-    font-size: 1rem; /* Adjust caption size */
     color: #212121; /* Caption text color */
 }
 
@@ -265,12 +252,6 @@ h4 {
 
 .sectionright img {
     width: 80%;
-}
-
-.container2 {
-    padding: 0; /* Remove extra padding that might limit width */
-    margin: 0; /* Ensure no additional margin is applied */
-    width: 100%; /* Make sure it spans the full column width */
 }
 
 h6 {
@@ -487,11 +468,6 @@ video {
     align-items: flex-start; /* Align content to the left */
 }
 
-.navbar-left .subtext {
-    font-family: var(--nav); /* Use your preferred font */
-    font-weight: 400;
-}
-
 .navbar-right {
     position: fixed;
     font-family: var(--nav);
@@ -534,10 +510,6 @@ video {
     background-color: #0ACC6C; /* Change color on hover */
 }
 
-.svg {
-    width: 40px;
-}
-
 header {
     max-width: 80%;
     align-items: left;
@@ -548,7 +520,7 @@ header {
 }
 
 header a:hover svg {
-    fill: var(--magenta);
+    fill: var(--red);
 }
 
 nav {
@@ -578,7 +550,7 @@ img {
 }
 
 .social-links img:hover {
-    color: var(--magenta);
+    color: var(--red);
 }
 
 html, body {
@@ -684,6 +656,7 @@ html, body {
     }
     .sectionright1 {
         padding: 0 2% 10% 2%;
+        margin: auto;
     }
 
     /* Images in Image Sections */
