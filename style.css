@@ -213,7 +213,7 @@ h4 {
 }
 .section {
     border-top: 1px solid var(--red);
-    padding: 60px 10% 60px 10%;
+    padding: 60px 0% 60px 0%;
 }
 
 .sectionheader {
@@ -242,7 +242,7 @@ h4 {
     margin: auto;
     gap: 2rem;
     padding: 0 0 0 0;
-    width: 100%;
+    width: 80%;
     max-width: 1500px;
 }
 
@@ -679,7 +679,7 @@ html, body {
         padding: 0;
     }
     .sectionleft {
-        padding: 8% 2% 10% 2%;
+        padding: 8% 2% 0% 2%;
 
     }
     .sectionright1 {
@@ -707,7 +707,7 @@ html, body {
     .intro {
         grid-template-columns: 1fr;   /* stack */
         height: auto;                 /* avoid 100vh issues on mobile */
-        padding: 8% 0 0 0;
+        padding: 20% 0 0 0;
         width: 95%;
         margin: auto;
         row-gap: 1rem;
