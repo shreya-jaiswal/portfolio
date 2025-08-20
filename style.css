@@ -422,7 +422,7 @@ video {
 .footer {
     background: var(--black); /* Dark background */
     color: var(--white); /* White text */
-    padding: 1.5rem 10%; /* Adjust spacing */
+    padding: 1.5rem 0 0 0;
 }
 
 /* Grid Layout */
@@ -430,6 +430,9 @@ video {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     align-items: center; /* Vertically align content */
+    max-width: 1500px;
+    width: 85%;
+    margin: auto;
 }
 
 /* Left Column: Align Text Left */
