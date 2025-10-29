@@ -230,7 +230,7 @@ h4 {
     align-items: flex-start; /* Align items at the top */
     margin: auto;
     gap: 2rem;
-    padding: 0 0 0 0;
+    padding: 0 0 80 0;
     width: 80%;
     max-width: 1500px;
 }
